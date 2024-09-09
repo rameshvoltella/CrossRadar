@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("kotlin-kapt")
+    id ("kotlin-parcelize")
+    id("com.google.dagger.hilt.android")
+    kotlin("kapt")
 }
 
 android {
@@ -52,20 +56,60 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation("androidx.activity:activity-compose:1.8.2")
+    implementation(platform("androidx.compose:compose-bom:2024.02.01"))
+    implementation ("androidx.navigation:navigation-compose:2.7.7")
+    implementation ("androidx.compose.material:material:1.4.0-beta01")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation("androidx.compose.material3:material3")
+    implementation(libs.androidx.runtime.livedata)
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+//    implementation ("com.github.kotvertolet:youtube-jextractor:v0.3.4")
+//    implementation("com.squareup.okhttp3:okhttp:2.3.0")
+//    implementation ("com.google.code.gson:gson:2.8.6")
+//    implementation  ("org.mozilla:rhino:1.7.13")
+    implementation ("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
+    implementation(libs.hilt.android)
+    debugImplementation(libs.ui.tooling)
+    kapt(libs.hilt.android.compiler)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.work.runtime.ktx)
+    kapt(libs.moshi.kotlin.codegen)
+    implementation(libs.moshi.kotlin)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.tooling)
-    debugImplementation(libs.androidx.ui.test.manifest)
+    // retrofit
+    implementation ("com.squareup.retrofit2:converter-moshi:2.11.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation ("com.squareup.retrofit2:converter-scalars:2.11.0")
+    implementation ("io.coil-kt:coil-compose:2.6.0")
+    // Hiltsa
+    /*  implementation("com.google.dagger:hilt-android:2.50")
+      implementation("androidx.navigation:navigation-runtime-ktx:2.7.7")
+      implementation("androidx.work:work-runtime-ktx:2.9.0")
+      implementation("androidx.hilt:hilt-common:1.2.0")
+      implementation("androidx.hilt:hilt-work:1.2.0")
+      ksp("com.google.dagger:hilt-android-compiler:2.50")*/
+
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+    implementation("androidx.hilt:hilt-common:1.2.0")
+    implementation("androidx.hilt:hilt-work:1.2.0")
+    implementation ("androidx.hilt:hilt-navigation-compose:1.2.0")
     implementation ("org.jsoup:jsoup:1.18.1")
 
+}
+kapt {
+    correctErrorTypes = true
 }

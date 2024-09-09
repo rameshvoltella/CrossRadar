@@ -14,6 +14,8 @@ layout poda
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string network_error
+string no_internet
 style Theme.LevelCrossApp
 xml backup_rules
 xml data_extraction_rules

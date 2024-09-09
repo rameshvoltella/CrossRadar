@@ -1,0 +1,3 @@
+com.open.levelcrossapp.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
