@@ -1,0 +1,323 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:2:1-28:12
+MERGED from [androidx.compose.material3:material3:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/7ee716bfe69f7e0c50e511dda73de528/transformed/material3-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/9291a676418dc286fe8d347cd7b013fd/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1310f8a83e800b542649acaf1e96de98/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/23cb1cb687c01e1177b77dcb7547ec1d/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/0a5b1a3aa1eff958d568185c5c9b2d9b/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/4b95bedea8102a2bc5b82682795d5560/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/76201150db2d5574724c8e4365afa1d1/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/3527db32bfbe9e63b1befc272c69615b/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/e6f2bd79215477d864823cc0628d6149/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/595f58504837e66c71c21e31d101d726/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/2ac9cfafb486e31ae039975957fe465d/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/b8703727689e201b6e4ed7345accdf60/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/d926c2533c687d4a7b2ec052871045c9/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/ee3f44d39279b853fc37e744574182be/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1d345078c9ae9e486c1d28cfec476b46/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/3c29b3df220d683bb70068a3619c3270/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/b75c2ad2c3f30c2cb3313d4743dbd3d9/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/dc2ca77a47d367a7b1c65df273f1809d/transformed/ui-test-manifest-1.5.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity:1.9.1] /Users/oliveboard/.gradle/caches/transforms-4/4c516a7b8def0543cde0a52759ca223f/transformed/activity-1.9.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-compose:1.9.1] /Users/oliveboard/.gradle/caches/transforms-4/ebd7082c6f0255022c1baa7755aa29b8/transformed/activity-compose-1.9.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/oliveboard/.gradle/caches/transforms-4/1e272606401cc739829c1eb6e7bd8480/transformed/activity-ktx-1.9.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/oliveboard/.gradle/caches/transforms-4/290aa90e2a71b5f859c776a2ed0c901d/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/oliveboard/.gradle/caches/transforms-4/8909b8294d0ebc83c0a55152d7da36e0/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e88dd10ae9aa91fb72eb3c4eaa7de9a4/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/1abe5db98835d8bd7b7c1036239080c8/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/434d5aca35a31e90dbac1f1d8e20da4d/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/9ab3fb47849ef0d9c827bf5e35d33366/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/b336e81a19cb6f56969968113ba1771c/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/4535c37fe8f3f89f0bd1d41a6ba17e50/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/87893656bded1f849d3994c9f497ea61/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/cc7d35ce8fc220702b0ffe058fb5d074/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e4a1d9f43ca49ee504f5d214515a95aa/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/a4f78575c1af34d55b017942be03226b/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/91d56f5ce3e98f1fcad0a346e0b2aabe/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/8192c76f3717b6594f5976092177e917/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/98c2f12a517c78911b3c44c62f1ee465/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/c1a5ad3339a26225bd8ace6ee2a955ea/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/1531931a529813c446fef3b35a544e0f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/2cb6028a61ffe2d33db9ce6fb6899bcb/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/1e09bb1734457aa3affd483f40eeb77d/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/oliveboard/.gradle/caches/transforms-4/1f2389911a64e62032a0151be53d2e06/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:4:1-62
+	android:name
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:4:18-60
+application
+ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:5:5-26:19
+INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:5:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1d345078c9ae9e486c1d28cfec476b46/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1d345078c9ae9e486c1d28cfec476b46/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/dc2ca77a47d367a7b1c65df273f1809d/transformed/ui-test-manifest-1.5.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/dc2ca77a47d367a7b1c65df273f1809d/transformed/ui-test-manifest-1.5.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e88dd10ae9aa91fb72eb3c4eaa7de9a4/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e88dd10ae9aa91fb72eb3c4eaa7de9a4/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/1531931a529813c446fef3b35a544e0f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/1531931a529813c446fef3b35a544e0f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/2cb6028a61ffe2d33db9ce6fb6899bcb/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/2cb6028a61ffe2d33db9ce6fb6899bcb/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:10:9-41
+	android:fullBackupContent
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:8:9-54
+	android:roundIcon
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:11:9-54
+	tools:targetApi
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:14:9-29
+	android:icon
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:13:9-51
+	android:dataExtractionRules
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:7:9-65
+activity#com.open.levelcrossapp.MainActivity
+ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:15:9-25:20
+	android:label
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:18:13-45
+	android:exported
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:17:13-36
+	android:theme
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:19:13-55
+	android:name
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:16:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml:23:27-74
+uses-sdk
+INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml
+INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml
+MERGED from [androidx.compose.material3:material3:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/7ee716bfe69f7e0c50e511dda73de528/transformed/material3-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/7ee716bfe69f7e0c50e511dda73de528/transformed/material3-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/9291a676418dc286fe8d347cd7b013fd/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/9291a676418dc286fe8d347cd7b013fd/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1310f8a83e800b542649acaf1e96de98/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1310f8a83e800b542649acaf1e96de98/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/23cb1cb687c01e1177b77dcb7547ec1d/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/23cb1cb687c01e1177b77dcb7547ec1d/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/0a5b1a3aa1eff958d568185c5c9b2d9b/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/0a5b1a3aa1eff958d568185c5c9b2d9b/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/4b95bedea8102a2bc5b82682795d5560/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/4b95bedea8102a2bc5b82682795d5560/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/76201150db2d5574724c8e4365afa1d1/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/76201150db2d5574724c8e4365afa1d1/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/3527db32bfbe9e63b1befc272c69615b/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/3527db32bfbe9e63b1befc272c69615b/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/e6f2bd79215477d864823cc0628d6149/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/e6f2bd79215477d864823cc0628d6149/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/595f58504837e66c71c21e31d101d726/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/595f58504837e66c71c21e31d101d726/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/2ac9cfafb486e31ae039975957fe465d/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/2ac9cfafb486e31ae039975957fe465d/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/b8703727689e201b6e4ed7345accdf60/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/b8703727689e201b6e4ed7345accdf60/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/d926c2533c687d4a7b2ec052871045c9/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/d926c2533c687d4a7b2ec052871045c9/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/ee3f44d39279b853fc37e744574182be/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/ee3f44d39279b853fc37e744574182be/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1d345078c9ae9e486c1d28cfec476b46/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1d345078c9ae9e486c1d28cfec476b46/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/3c29b3df220d683bb70068a3619c3270/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/3c29b3df220d683bb70068a3619c3270/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/b75c2ad2c3f30c2cb3313d4743dbd3d9/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/b75c2ad2c3f30c2cb3313d4743dbd3d9/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/dc2ca77a47d367a7b1c65df273f1809d/transformed/ui-test-manifest-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/dc2ca77a47d367a7b1c65df273f1809d/transformed/ui-test-manifest-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.1] /Users/oliveboard/.gradle/caches/transforms-4/4c516a7b8def0543cde0a52759ca223f/transformed/activity-1.9.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.1] /Users/oliveboard/.gradle/caches/transforms-4/4c516a7b8def0543cde0a52759ca223f/transformed/activity-1.9.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.9.1] /Users/oliveboard/.gradle/caches/transforms-4/ebd7082c6f0255022c1baa7755aa29b8/transformed/activity-compose-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.1] /Users/oliveboard/.gradle/caches/transforms-4/ebd7082c6f0255022c1baa7755aa29b8/transformed/activity-compose-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/oliveboard/.gradle/caches/transforms-4/1e272606401cc739829c1eb6e7bd8480/transformed/activity-ktx-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.1] /Users/oliveboard/.gradle/caches/transforms-4/1e272606401cc739829c1eb6e7bd8480/transformed/activity-ktx-1.9.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/oliveboard/.gradle/caches/transforms-4/290aa90e2a71b5f859c776a2ed0c901d/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/oliveboard/.gradle/caches/transforms-4/290aa90e2a71b5f859c776a2ed0c901d/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/oliveboard/.gradle/caches/transforms-4/8909b8294d0ebc83c0a55152d7da36e0/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/oliveboard/.gradle/caches/transforms-4/8909b8294d0ebc83c0a55152d7da36e0/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e88dd10ae9aa91fb72eb3c4eaa7de9a4/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e88dd10ae9aa91fb72eb3c4eaa7de9a4/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/1abe5db98835d8bd7b7c1036239080c8/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/1abe5db98835d8bd7b7c1036239080c8/transformed/lifecycle-livedata-core-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/434d5aca35a31e90dbac1f1d8e20da4d/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/434d5aca35a31e90dbac1f1d8e20da4d/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/9ab3fb47849ef0d9c827bf5e35d33366/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/9ab3fb47849ef0d9c827bf5e35d33366/transformed/lifecycle-viewmodel-savedstate-2.8.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/b336e81a19cb6f56969968113ba1771c/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/b336e81a19cb6f56969968113ba1771c/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/4535c37fe8f3f89f0bd1d41a6ba17e50/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/4535c37fe8f3f89f0bd1d41a6ba17e50/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/87893656bded1f849d3994c9f497ea61/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/87893656bded1f849d3994c9f497ea61/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/cc7d35ce8fc220702b0ffe058fb5d074/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/cc7d35ce8fc220702b0ffe058fb5d074/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e4a1d9f43ca49ee504f5d214515a95aa/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e4a1d9f43ca49ee504f5d214515a95aa/transformed/lifecycle-viewmodel-ktx-2.8.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/a4f78575c1af34d55b017942be03226b/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/a4f78575c1af34d55b017942be03226b/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/91d56f5ce3e98f1fcad0a346e0b2aabe/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/91d56f5ce3e98f1fcad0a346e0b2aabe/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/8192c76f3717b6594f5976092177e917/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/8192c76f3717b6594f5976092177e917/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/98c2f12a517c78911b3c44c62f1ee465/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/98c2f12a517c78911b3c44c62f1ee465/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/c1a5ad3339a26225bd8ace6ee2a955ea/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/c1a5ad3339a26225bd8ace6ee2a955ea/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/1531931a529813c446fef3b35a544e0f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/1531931a529813c446fef3b35a544e0f/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/2cb6028a61ffe2d33db9ce6fb6899bcb/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/2cb6028a61ffe2d33db9ce6fb6899bcb/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/1e09bb1734457aa3affd483f40eeb77d/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/oliveboard/.gradle/caches/transforms-4/1e09bb1734457aa3affd483f40eeb77d/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/oliveboard/.gradle/caches/transforms-4/1f2389911a64e62032a0151be53d2e06/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/oliveboard/.gradle/caches/transforms-4/1f2389911a64e62032a0151be53d2e06/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/oliveboard/Documents/Study/levelcrossapp/app/src/main/AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1d345078c9ae9e486c1d28cfec476b46/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1d345078c9ae9e486c1d28cfec476b46/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/1d345078c9ae9e486c1d28cfec476b46/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/dc2ca77a47d367a7b1c65df273f1809d/transformed/ui-test-manifest-1.5.0/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/dc2ca77a47d367a7b1c65df273f1809d/transformed/ui-test-manifest-1.5.0/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.5.0] /Users/oliveboard/.gradle/caches/transforms-4/dc2ca77a47d367a7b1c65df273f1809d/transformed/ui-test-manifest-1.5.0/AndroidManifest.xml:24:13-63
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e88dd10ae9aa91fb72eb3c4eaa7de9a4/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e88dd10ae9aa91fb72eb3c4eaa7de9a4/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/2cb6028a61ffe2d33db9ce6fb6899bcb/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/oliveboard/.gradle/caches/transforms-4/2cb6028a61ffe2d33db9ce6fb6899bcb/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/oliveboard/.gradle/caches/transforms-4/1ba349b0033ca92af552a6101bf30120/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e88dd10ae9aa91fb72eb3c4eaa7de9a4/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e88dd10ae9aa91fb72eb3c4eaa7de9a4/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] /Users/oliveboard/.gradle/caches/transforms-4/e88dd10ae9aa91fb72eb3c4eaa7de9a4/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#com.open.levelcrossapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#com.open.levelcrossapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/oliveboard/.gradle/caches/transforms-4/09b9d3569ccc188e80ed59b5beb48cbd/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/oliveboard/.gradle/caches/transforms-4/0d7a1072661ff103407b4356ab773fc6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
