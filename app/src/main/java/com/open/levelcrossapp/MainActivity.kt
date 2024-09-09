@@ -19,7 +19,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
+import com.open.levelcrossapp.ui.compose.HomeScreen
 import com.open.levelcrossapp.ui.theme.LevelCrossAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -29,7 +31,18 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import org.jsoup.select.Elements
+@AndroidEntryPoint
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            HomeScreen()
 
+        }
+    }
+}
+/*
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,7 +73,8 @@ class MainActivity : ComponentActivity() {
                 handler.proceed()
             }
         }
-       /* webView.webViewClient = object : WebViewClient() {
+       */
+/* webView.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView?, url: String?) {
                 super.onPageFinished(view, url)
                 Log.d("tadada","url"+url)
@@ -77,9 +91,11 @@ class MainActivity : ComponentActivity() {
 //                            }
 //                            }
             }
-        }*/
+        }*//*
+
         webView.loadUrl("https://etrain.info/trains/Ernakulam-Jn-ERS-to-Kottayam-KTYM")
-       /* CoroutineScope(Dispatchers.IO).launch {
+       */
+/* CoroutineScope(Dispatchers.IO).launch {
             try {
                 withContext(Dispatchers.Main) {
                     webView.settings.javaScriptEnabled = true
@@ -105,7 +121,8 @@ class MainActivity : ComponentActivity() {
             } catch (e: Exception) {
                 e.printStackTrace()
             }
-        }*/
+        }*//*
+
 
         lifecycleScope.launch {
             main()
@@ -223,6 +240,7 @@ Log.d("TADA","NANANANANAN")
         }
     }
 }
+*/
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {

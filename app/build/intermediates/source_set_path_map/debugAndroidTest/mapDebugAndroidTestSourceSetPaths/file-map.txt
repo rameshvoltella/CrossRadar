@@ -1,5 +1,0 @@
-com.open.levelcrossapp.test.app-core-1.6.1-0 /Users/oliveboard/.gradle/caches/transforms-4/ef02826762b4a9b0e360997e0a11f456/transformed/core-1.6.1/res
-com.open.levelcrossapp.test.app-androidTest-1 /Users/oliveboard/Documents/Study/levelcrossapp/app/build/generated/res/resValues/androidTest/debug
-com.open.levelcrossapp.test.app-mergeDebugAndroidTestResources-2 /Users/oliveboard/Documents/Study/levelcrossapp/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.open.levelcrossapp.test.app-mergeDebugAndroidTestResources-3 /Users/oliveboard/Documents/Study/levelcrossapp/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.open.levelcrossapp.test.app-debugAndroidTest-4 /Users/oliveboard/Documents/Study/levelcrossapp/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

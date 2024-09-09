@@ -108,7 +108,7 @@ dependencies {
     implementation("androidx.hilt:hilt-work:1.2.0")
     implementation ("androidx.hilt:hilt-navigation-compose:1.2.0")
     implementation ("org.jsoup:jsoup:1.18.1")
-
+    implementation ("com.squareup.retrofit2:converter-scalars:2.9.0")
 }
 kapt {
     correctErrorTypes = true

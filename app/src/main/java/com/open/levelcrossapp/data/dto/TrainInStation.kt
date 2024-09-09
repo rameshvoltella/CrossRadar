@@ -1,4 +1,3 @@
 package com.open.levelcrossapp.data.dto
 
-class TrainInStation {
-}
+data class TrainInStation(val trainList: List<TrainInfo>?)
