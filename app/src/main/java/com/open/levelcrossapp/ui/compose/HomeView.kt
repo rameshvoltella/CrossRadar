@@ -103,7 +103,7 @@ fun HomeScreen(viewmodel: AppViewmodel = hiltViewModel()) {
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp) // Add horizontal padding
             ) {
-                Text(text = "Click Me")
+                Text(text = "Check Cross")
             }
         }
     }

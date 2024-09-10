@@ -151,12 +151,10 @@ class RemoteData @Inject constructor(
                         "" + passenger + "<><>" + passenger + "<><<>" + time
                     )
                     val currentStationcode = getStationFromGibbo(response as String)
-                    if (currentStationcode.equals("VARD") || currentStationcode.equals("KDTY") || currentStationcode.equals(
-                            "ETM"
-                        ) || currentStationcode.equals("KRPP") || currentStationcode.equals("PVRD")
+                    if (currentStationcode.equals("VARD") || currentStationcode.equals("KDTY")  || currentStationcode.equals("KRPP")
                     ) {
                         currentdetails =
-                            passenger + "<>" + "PASSENGER" + "<KTM TIME>" + passangersTime
+                            passenger + "<>" + "PASSENGER" + "<>" + currentStationcode + "<KTM TIME>" + time
 
                         if (isCurrentTimeAfterGivenTime(time)) {
 
@@ -168,7 +166,7 @@ class RemoteData @Inject constructor(
                                 currentdetails = currentdetails + "\n" + "POSSIBLE CROSS"
 
                             } else {
-                                currentdetails = currentdetails + "\n" + "50:50 CROSS"
+                                currentdetails = currentdetails + "\n" + "CROSS POSSIBLITY IS LESS"
 
                             }
                         } else {
@@ -179,10 +177,9 @@ class RemoteData @Inject constructor(
                                 currentdetails = currentdetails + "\n" + "POSSIBLE CROSS"
 
 
-
                             } else {
 
-                                currentdetails = currentdetails + "\n" + "50:50 CROSS"
+                                currentdetails = currentdetails + "\n" + "CROSS POSSIBLITY IS LESS"
 
                             }
                         }
@@ -236,7 +233,8 @@ class RemoteData @Inject constructor(
                                         currentdetails = currentdetails + "\n" + "POSSIBLE CROSS"
 
                                     } else {
-                                        currentdetails = currentdetails + "\n" + "50:50 CROSS"
+                                        currentdetails =
+                                            currentdetails + "\n" + "CROSS POSSIBLITY IS LESS"
 
                                     }
                                 } else {
@@ -247,10 +245,10 @@ class RemoteData @Inject constructor(
                                         currentdetails = currentdetails + "\n" + "POSSIBLE CROSS"
 
 
-
                                     } else {
 
-                                        currentdetails = currentdetails + "\n" + "50:50 CROSS"
+                                        currentdetails =
+                                            currentdetails + "\n" + "CROSS POSSIBLITY IS LESS"
 
                                     }
                                 }
