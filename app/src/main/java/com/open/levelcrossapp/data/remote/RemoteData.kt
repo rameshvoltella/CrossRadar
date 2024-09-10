@@ -16,6 +16,7 @@ import com.open.levelcrossapp.errors.NO_INTERNET_CONNECTION
 import com.open.levelcrossapp.errors.SERVER_ERROR
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import org.jsoup.Jsoup
 import retrofit2.Response
 import java.io.IOException
 import java.text.SimpleDateFormat
@@ -101,44 +102,103 @@ class RemoteData @Inject constructor(
             var isLevelCrossOpen = true
             var currentdetails = "No Trains"
             val formatter = SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault())
-            for (trainN in trainInfo.trainList!!) {
+            val passangers = arrayListOf(
+                "06777",
+                "06453",
+                "16309",
+                "06769",
+                "06443",
+                "06444",
+                "06768",
+                "06778",
+                "16310",
+                "06434",
+                "06442"
+            )
+            val passangersTime = arrayListOf(
+                "07:28",
+                "09:30",
+                "10:10",
+                "14:58",
+                "19:43",
+                "06:25",
+                "10:00",
+                "13:03",
+                "16:25",
+                "17:20",
+                "23:00"
+            )
 
-                if (isWithinTwoHoursBefore(trainN.ArrivalTime)) {
-                    for (i in 2 downTo 0) {
-                        val calendar = Calendar.getInstance()
-                        calendar.add(Calendar.DAY_OF_YEAR, -i)
-                        val date = calendar.time//
-                        //               println("Date ${3 - i}: ${date.format(formatter)}")
-                        val response = processCall {
-                            apiService.getTrainInStation(
-                                "https://www.confirmtkt.com/train-running-status/" + trainN.TrainNo + "?Date=${
-                                    formatter.format(
-                                        date
-                                    )
-                                }"
-                            )
-                        }
-                        val currentStationcode = extractCurrentStnCode(response as String)
-                        Log.d(
-                            "chakkuz",
-                            "" + trainN.TrainNo + "<><>" + formatter.format(date) + "<><<>" + currentStationcode
+
+            for (i in passangers.indices) {
+                val passenger = passangers[i]
+                val time = passangersTime[i]
+                println("Passenger ID: $passenger, Time: $time")
+                Log.d("ppppko","https://www.goibibo.com/trains/app/trainstatus/results/?train=" + passenger )
+                if (isWithinTwoHoursOf(time)) {
+
+                    val response = processCall {
+                        apiService.getTrainStatus(
+                            "https://www.goibibo.com/trains/app/trainstatus/results/?train=" + passenger
                         )
-
-                        if (currentStationcode.equals("VARD") || currentStationcode.equals("KDTY") || currentStationcode.equals(
-                                "ETM"
-                            ) || currentStationcode.equals("KRPP")
-                        ) {
-                            currentdetails =
-                                trainN.TrainNo + "<>" + trainN.TrainName + "<>" + currentStationcode
-                            isLevelCrossOpen = false
-                            break
-                        }
+                    }
+                    Log.d(
+                        "chakkuzo IBIBI->",
+                        "" + passenger + "<><>" + passenger + "<><<>" + time
+                    )
+                    val currentStationcode = getStationFromGibbo(response as String)
+                    if (currentStationcode.equals("VARD") || currentStationcode.equals("KDTY") || currentStationcode.equals(
+                            "ETM"
+                        ) || currentStationcode.equals("KRPP") ||  currentStationcode.equals("PVRD")
+                    ) {
+                        currentdetails =
+                            passenger + "<>" + "PASSENGER" + "<>" + currentStationcode
+                        isLevelCrossOpen = false
+                        break
                     }
                 }
-                if (!isLevelCrossOpen) {
-                    break
-                }
+            }
+            if (isLevelCrossOpen) {
 
+                for (trainN in trainInfo.trainList!!) {
+
+                    if (isWithinTwoHoursOf(trainN.ArrivalTime)) {
+                        for (i in 2 downTo 0) {
+                            val calendar = Calendar.getInstance()
+                            calendar.add(Calendar.DAY_OF_YEAR, -i)
+                            val date = calendar.time//
+                            //               println("Date ${3 - i}: ${date.format(formatter)}")
+                            val response = processCall {
+                                apiService.getTrainInStation(
+                                    "https://www.confirmtkt.com/train-running-status/" + trainN.TrainNo + "?Date=${
+                                        formatter.format(
+                                            date
+                                        )
+                                    }"
+                                )
+                            }
+                            val currentStationcode = extractCurrentStnCode(response as String)
+                            Log.d(
+                                "chakkuzo CNF->",
+                                "" + trainN.TrainNo + "<><>" + formatter.format(date) + "<><<>" + currentStationcode
+                            )
+
+                            if (currentStationcode.equals("VARD") || currentStationcode.equals("KDTY") || currentStationcode.equals(
+                                    "ETM"
+                                ) || currentStationcode.equals("KRPP")|| currentStationcode.equals("PVRD")
+                            ) {
+                                currentdetails =
+                                    trainN.TrainNo + "<>" + trainN.TrainName + "<>" + currentStationcode
+                                isLevelCrossOpen = false
+                                break
+                            }
+                        }
+                    }
+                    if (!isLevelCrossOpen) {
+                        break
+                    }
+
+                }
             }
             Resource.Success(TrainDetails(isLevelCrossOpen, currentdetails))
 
@@ -180,7 +240,7 @@ class RemoteData @Inject constructor(
 
 
     fun isWithinTwoHoursBefore(targetTime: String): Boolean {
-        Log.d("chakkuz","ARRIVAL"+targetTime)
+        Log.d("chakkuz", "ARRIVAL" + targetTime)
         try {
             val timeFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
 
@@ -206,9 +266,65 @@ class RemoteData @Inject constructor(
                     set(Calendar.MONTH, currentTime.get(Calendar.MONTH))
                     set(Calendar.DAY_OF_MONTH, currentTime.get(Calendar.DAY_OF_MONTH))
                 })
-        }catch (ex:Exception)
-        {
+        } catch (ex: Exception) {
             return false
         }
     }
+
+    fun isWithinTwoHoursOf(targetTime: String): Boolean {
+        Log.d("chakkuz", "TARGET TIME: $targetTime")
+        try {
+            val timeFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
+
+            // Get current time
+            val currentTime = Calendar.getInstance()
+
+            // Parse target time and set it to the current date
+            val targetCalendar = Calendar.getInstance().apply {
+                time = timeFormat.parse(targetTime)
+                set(Calendar.YEAR, currentTime.get(Calendar.YEAR))
+                set(Calendar.MONTH, currentTime.get(Calendar.MONTH))
+                set(Calendar.DAY_OF_MONTH, currentTime.get(Calendar.DAY_OF_MONTH))
+            }
+
+            // Create calendar instances for 2 hours before and after the target time
+            val twoHoursBeforeTarget = targetCalendar.clone() as Calendar
+            twoHoursBeforeTarget.add(Calendar.HOUR_OF_DAY, -1)
+
+            val twoHoursAfterTarget = targetCalendar.clone() as Calendar
+            twoHoursAfterTarget.add(Calendar.HOUR_OF_DAY, 1)
+
+            // Check if the current time is within the 2-hour window
+            return currentTime.after(twoHoursBeforeTarget) && currentTime.before(twoHoursAfterTarget)
+        } catch (ex: Exception) {
+            Log.e("chakkuz", "Error parsing time", ex)
+            return false
+        }
+    }
+
+    fun getStationFromGibbo(html:String):String
+    {
+
+        try {
+            val document = Jsoup.parse(html)
+
+            // Select the div with class "respNxtDtls"
+            val divElement = document.select("div.respNxtDtls")
+
+            // Extract the text from the first <p> tag within the div
+            val stationName = divElement.select("p.boldFont").first()?.text()
+
+            // Split the text by comma and take the first part (KRPP)
+            val stationCode = stationName?.split(",")?.get(0)?.trim()
+            println("KITTIYO: $stationCode")
+
+            return stationCode+""
+        }catch (ex:Exception)
+        {
+            return ""
+        }
+
+        // Print the result
+    }
+
 }

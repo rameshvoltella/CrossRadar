@@ -22,20 +22,58 @@ public class UserAgentInterceptor implements Interceptor {
     }
 
     public UserAgentInterceptor() {
-        this(getDefaultUserAgent());
+        this(getWebViewUserAgent());
     }
 
     @Override
     public Response intercept(Chain chain) throws IOException {
         Request userAgentRequest = chain.request()
                 .newBuilder()
-                .header("User-Agent", userAgent)
+                .header("User-Agent", "PostmanRuntime/7.40.0")
+                .header("Accept","*/*")
                 .build();
 
 //        Log.d("OkHttp", String.format("--> Sending request %s on %s%n%s", userAgentRequest.url(), chain.connection(), userAgentRequest.headers()));
         return chain.proceed(userAgentRequest);
     }
 
+    public static String getWebViewUserAgent() {
+        try {
+            StringBuilder result = new StringBuilder(128);
+
+            // Start with the app name and version
+            result.append("Mozilla/5.0 (Linux; U; Android ");
+
+            // Append Android version
+            String version = Build.VERSION.RELEASE; // e.g., "10"
+            result.append(version.length() > 0 ? version : "1.0");
+
+            // Add device information
+            result.append("; ");
+            result.append(Build.MODEL); // e.g., "Pixel 4"
+            result.append(" Build/");
+            result.append(Build.ID); // e.g., "QQ3A.200605.001"
+
+            result.append(")");
+
+            // Add WebKit details
+            result.append(" AppleWebKit/537.36 (KHTML, like Gecko)");
+
+            // Append Chrome version
+            result.append(" Version/4.0 Chrome/").append("74.0.3729.136");
+
+            // Add Safari version to match WebView
+            result.append(" Mobile Safari/537.36");
+
+            return result.toString();
+        } catch (Exception e) {
+            return String.format(Locale.US,
+                    "Mozilla/5.0 (Linux; Android %s; %s Build/%s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36",
+                    Build.VERSION.RELEASE,
+                    Build.MODEL,
+                    Build.ID);
+        }
+    }
 
     public static String getDefaultUserAgent() {
         try {
