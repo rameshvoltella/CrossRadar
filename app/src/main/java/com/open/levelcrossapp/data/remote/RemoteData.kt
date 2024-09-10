@@ -21,6 +21,7 @@ import retrofit2.Response
 import java.io.IOException
 import java.text.SimpleDateFormat
 import java.time.LocalDate
+import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 import java.util.Calendar
 import java.util.Date
@@ -134,7 +135,10 @@ class RemoteData @Inject constructor(
                 val passenger = passangers[i]
                 val time = passangersTime[i]
                 println("Passenger ID: $passenger, Time: $time")
-                Log.d("ppppko","https://www.goibibo.com/trains/app/trainstatus/results/?train=" + passenger )
+                Log.d(
+                    "ppppko",
+                    "https://www.goibibo.com/trains/app/trainstatus/results/?train=" + passenger
+                )
                 if (isWithinTwoHoursOf2(time)) {
 
                     val response = processCall {
@@ -149,10 +153,40 @@ class RemoteData @Inject constructor(
                     val currentStationcode = getStationFromGibbo(response as String)
                     if (currentStationcode.equals("VARD") || currentStationcode.equals("KDTY") || currentStationcode.equals(
                             "ETM"
-                        ) || currentStationcode.equals("KRPP") ||  currentStationcode.equals("PVRD")
+                        ) || currentStationcode.equals("KRPP") || currentStationcode.equals("PVRD")
                     ) {
                         currentdetails =
-                            passenger + "<>" + "PASSENGER" + "<>" + currentStationcode
+                            passenger + "<>" + "PASSENGER" + "<KTM TIME>" + passangersTime
+
+                        if (isCurrentTimeAfterGivenTime(time)) {
+
+
+                            if (currentStationcode.equals("KRPP") || currentStationcode.equals(
+                                    "KDTY"
+                                ) || currentStationcode.equals("VARD")
+                            ) {
+                                currentdetails = currentdetails + "\n" + "POSSIBLE CROSS"
+
+                            } else {
+                                currentdetails = currentdetails + "\n" + "50:50 CROSS"
+
+                            }
+                        } else {
+                            if (currentStationcode.equals("VARD") || currentStationcode.equals(
+                                    "KDTY"
+                                ) || currentStationcode.equals("PVRD")
+                            ) {
+                                currentdetails = currentdetails + "\n" + "POSSIBLE CROSS"
+
+
+
+                            } else {
+
+                                currentdetails = currentdetails + "\n" + "50:50 CROSS"
+
+                            }
+                        }
+
                         isLevelCrossOpen = false
                         break
                     }
@@ -185,10 +219,41 @@ class RemoteData @Inject constructor(
 
                             if (currentStationcode.equals("VARD") || currentStationcode.equals("KDTY") || currentStationcode.equals(
                                     "ETM"
-                                ) || currentStationcode.equals("KRPP")|| currentStationcode.equals("PVRD")
+                                ) || currentStationcode.equals("KRPP") || currentStationcode.equals(
+                                    "PVRD"
+                                )
                             ) {
                                 currentdetails =
-                                    trainN.TrainNo + "<>" + trainN.TrainName + "<>" + currentStationcode
+                                    trainN.TrainNo + "<>" + trainN.TrainName + "<>" + currentStationcode + "<KTM TIME> " + trainN.ArrivalTime
+
+                                if (isCurrentTimeAfterGivenTime(trainN.ArrivalTime)) {
+
+
+                                    if (currentStationcode.equals("KRPP") || currentStationcode.equals(
+                                            "KDTY"
+                                        ) || currentStationcode.equals("VARD")
+                                    ) {
+                                        currentdetails = currentdetails + "\n" + "POSSIBLE CROSS"
+
+                                    } else {
+                                        currentdetails = currentdetails + "\n" + "50:50 CROSS"
+
+                                    }
+                                } else {
+                                    if (currentStationcode.equals("VARD") || currentStationcode.equals(
+                                            "KDTY"
+                                        ) || currentStationcode.equals("PVRD")
+                                    ) {
+                                        currentdetails = currentdetails + "\n" + "POSSIBLE CROSS"
+
+
+
+                                    } else {
+
+                                        currentdetails = currentdetails + "\n" + "50:50 CROSS"
+
+                                    }
+                                }
                                 isLevelCrossOpen = false
                                 break
                             }
@@ -329,7 +394,9 @@ class RemoteData @Inject constructor(
             oneAndHalfHoursAfterTarget.add(Calendar.MINUTE, 30)
 
             // Check if the current time is within the 1.5-hour window
-            return currentTime.after(oneAndHalfHoursBeforeTarget) && currentTime.before(oneAndHalfHoursAfterTarget)
+            return currentTime.after(oneAndHalfHoursBeforeTarget) && currentTime.before(
+                oneAndHalfHoursAfterTarget
+            )
         } catch (ex: Exception) {
             Log.e("chakkuz", "Error parsing time", ex)
             return false
@@ -337,8 +404,7 @@ class RemoteData @Inject constructor(
     }
 
 
-    fun getStationFromGibbo(html:String):String
-    {
+    fun getStationFromGibbo(html: String): String {
 
         try {
             val document = Jsoup.parse(html)
@@ -353,13 +419,31 @@ class RemoteData @Inject constructor(
             val stationCode = stationName?.split(",")?.get(0)?.trim()
             println("KITTIYO: $stationCode")
 
-            return stationCode+""
-        }catch (ex:Exception)
-        {
+            return stationCode + ""
+        } catch (ex: Exception) {
             return ""
         }
 
         // Print the result
+    }
+
+    fun isCurrentTimeAfterGivenTime(time: String): Boolean {
+        // Given time as "15:33"
+        val givenTime = SimpleDateFormat("HH:mm", Locale.getDefault()).parse(time)
+
+        // Current time
+        val currentTime = Calendar.getInstance().time
+
+        // Format current time to match the given time format
+        val currentTimeFormatted =
+            SimpleDateFormat("HH:mm", Locale.getDefault()).format(currentTime)
+
+        // Parse the formatted current time
+        val currentTimeParsed =
+            SimpleDateFormat("HH:mm", Locale.getDefault()).parse(currentTimeFormatted)
+
+        // Return true if current time is after the given time
+        return currentTimeParsed.after(givenTime)
     }
 
 }
