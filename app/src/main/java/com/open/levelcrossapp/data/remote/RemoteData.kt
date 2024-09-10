@@ -289,10 +289,10 @@ class RemoteData @Inject constructor(
 
             // Create calendar instances for 2 hours before and after the target time
             val twoHoursBeforeTarget = targetCalendar.clone() as Calendar
-            twoHoursBeforeTarget.add(Calendar.HOUR_OF_DAY, -1)
+            twoHoursBeforeTarget.add(Calendar.HOUR_OF_DAY, -2)
 
             val twoHoursAfterTarget = targetCalendar.clone() as Calendar
-            twoHoursAfterTarget.add(Calendar.HOUR_OF_DAY, 1)
+            twoHoursAfterTarget.add(Calendar.HOUR_OF_DAY, 2)
 
             // Check if the current time is within the 2-hour window
             return currentTime.after(twoHoursBeforeTarget) && currentTime.before(twoHoursAfterTarget)
