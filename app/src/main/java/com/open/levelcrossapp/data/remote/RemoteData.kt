@@ -135,7 +135,7 @@ class RemoteData @Inject constructor(
                 val time = passangersTime[i]
                 println("Passenger ID: $passenger, Time: $time")
                 Log.d("ppppko","https://www.goibibo.com/trains/app/trainstatus/results/?train=" + passenger )
-                if (isWithinTwoHoursOf(time)) {
+                if (isWithinTwoHoursOf2(time)) {
 
                     val response = processCall {
                         apiService.getTrainStatus(
@@ -162,7 +162,7 @@ class RemoteData @Inject constructor(
 
                 for (trainN in trainInfo.trainList!!) {
 
-                    if (isWithinTwoHoursOf(trainN.ArrivalTime)) {
+                    if (isWithinTwoHoursOf2(trainN.ArrivalTime)) {
                         for (i in 2 downTo 0) {
                             val calendar = Calendar.getInstance()
                             calendar.add(Calendar.DAY_OF_YEAR, -i)
@@ -289,10 +289,11 @@ class RemoteData @Inject constructor(
 
             // Create calendar instances for 2 hours before and after the target time
             val twoHoursBeforeTarget = targetCalendar.clone() as Calendar
-            twoHoursBeforeTarget.add(Calendar.HOUR_OF_DAY, -2)
+            twoHoursBeforeTarget.add(Calendar.HOUR_OF_DAY, -1)
 
             val twoHoursAfterTarget = targetCalendar.clone() as Calendar
-            twoHoursAfterTarget.add(Calendar.HOUR_OF_DAY, 2)
+            twoHoursAfterTarget.add(Calendar.HOUR_OF_DAY, 1)
+
 
             // Check if the current time is within the 2-hour window
             return currentTime.after(twoHoursBeforeTarget) && currentTime.before(twoHoursAfterTarget)
@@ -301,6 +302,40 @@ class RemoteData @Inject constructor(
             return false
         }
     }
+
+    fun isWithinTwoHoursOf2(targetTime: String): Boolean {
+        Log.d("chakkuz", "TARGET TIME: $targetTime")
+        try {
+            val timeFormat = SimpleDateFormat("HH:mm", Locale.getDefault())
+
+            // Get current time
+            val currentTime = Calendar.getInstance()
+
+            // Parse target time and set it to the current date
+            val targetCalendar = Calendar.getInstance().apply {
+                time = timeFormat.parse(targetTime)
+                set(Calendar.YEAR, currentTime.get(Calendar.YEAR))
+                set(Calendar.MONTH, currentTime.get(Calendar.MONTH))
+                set(Calendar.DAY_OF_MONTH, currentTime.get(Calendar.DAY_OF_MONTH))
+            }
+
+            // Create calendar instances for 1 hour 30 minutes before and after the target time
+            val oneAndHalfHoursBeforeTarget = targetCalendar.clone() as Calendar
+            oneAndHalfHoursBeforeTarget.add(Calendar.HOUR_OF_DAY, -1)
+            oneAndHalfHoursBeforeTarget.add(Calendar.MINUTE, -30)
+
+            val oneAndHalfHoursAfterTarget = targetCalendar.clone() as Calendar
+            oneAndHalfHoursAfterTarget.add(Calendar.HOUR_OF_DAY, 1)
+            oneAndHalfHoursAfterTarget.add(Calendar.MINUTE, 30)
+
+            // Check if the current time is within the 1.5-hour window
+            return currentTime.after(oneAndHalfHoursBeforeTarget) && currentTime.before(oneAndHalfHoursAfterTarget)
+        } catch (ex: Exception) {
+            Log.e("chakkuz", "Error parsing time", ex)
+            return false
+        }
+    }
+
 
     fun getStationFromGibbo(html:String):String
     {
