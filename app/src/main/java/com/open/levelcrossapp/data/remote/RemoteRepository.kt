@@ -1,6 +1,7 @@
 package com.open.levelcrossapp.data.remote
 
 import com.open.levelcrossapp.data.Resource
+import com.open.levelcrossapp.data.dto.TrainDetails
 import com.open.levelcrossapp.data.dto.TrainInStation
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -13,6 +14,10 @@ class RemoteRepository@Inject constructor(
 
         return flow { emit(remoteRepository.getTrainByStation(url)) }
 
+    }
+
+    override suspend fun getCrossStatus(trainInfo: TrainInStation): Flow<Resource<TrainDetails>> {
+        return flow { emit(remoteRepository.getCrossStatus(trainInfo)) }
     }
 }
 

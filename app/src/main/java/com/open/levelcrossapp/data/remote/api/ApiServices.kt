@@ -16,4 +16,9 @@ interface ApiServices {
         @Url url: String
     ) : Response<String>
 
+    @GET
+    suspend fun getTrainStatus(
+        @Url url: String
+    ) : Response<String>
+
 }
